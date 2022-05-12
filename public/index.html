@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+
+<body>
+    <!-- login -->
+    <div class="sign_in"> 
+        <form class="vh-100 ">
+            <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+                <div class="container h-100">
+                    <div class="row d-flex justify-content-center align-items-center h-100">
+                        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                            <div class="card" style="border-radius: 15px;">
+                                <div class="card-body p-5">
+                                    <h2 class="text-uppercase text-center mb-5"></i>QUIZ APP</h2>
+                                    <div class="form-outline mb-4">
+                                        <input type="email" id="emails" class="form-control form-control-lg"
+                                            placeholder="Your Email" name="emails" />
+                                        <small class="form-text">Pleas fil up your email</small class="form-text">
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <input type="password" id="passwords" class="form-control form-control-lg"
+                                            placeholder="Password" name="passwords"/>
+                                            <small class="text">Pleas fil up your password</small class="text">
+                                            <small class="incorrect">Incorrect password and email</small class="text">
+                                    </div>
+                                    <div class="btn_login">
+                                       <button id="btn_login" type="submit"
+                                            class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">
+                                              Log in </button>
+                                              
+                                    </div>
+                                    <h4>or</h4>
+                                    <div class="btn-sign-up">
+                                        <button id="btn-sign-up" type="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body btnhige" class="btnhige">Create New Account</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <div class="sign-up" >
+        <section class="vh-100 bg-image"
+            >
+            <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+                <div class="container h-100">
+                    <div class="row d-flex justify-content-center align-items-center h-100">
+                        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                            <div class="card" style="border-radius: 15px;">
+                                <div class="card-body p-5">
+                                    <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+                                    <form class="higesignup">
+                                        <div class="form-outline mb-4">
+                                            <input type="text" id="username" class="form-control form-control-lg " placeholder="Your name" />
+                                            <!-- <label class="form-label" for="form3Example1cg">Your Name</label> -->
+
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            <input type="email" id="email" class="form-control form-control-lg" placeholder="Your email" />
+                                            <!-- <label class="form-label" for="form3Example3cg">Your Email</label> -->
+                                           
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            <input type="password" id="password" class="form-control form-control-lg" placeholder="Password" />
+                                            <!-- <label class="form-label" for="form3Example4cg">Password</label> -->
+                                            
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            <input type="password" id="re-password" class="form-control form-control-lg" placeholder="Repeat your password"/>
+                                            <!-- <label class="form-label" for="form3Example4cdg">Repeat your password</label> -->
+                                                <!-- <small class="incorrect_error">Incorrect password </small class="text"> -->
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <button type="submit" id="btn_register" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" > Register  </button>
+                                            <!-- <a class="log" href="create_quizz/create_quiz.html">quizz</a> -->
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div> 
+    <div class="start">
+        <div class="menu">
+            <h1>QUIZ</h1>
+        </div>
+    
+        <div class="containers">
+            <div class="header">
+                <h1>WELCOM TO OUR QUIZZ</h1>
+            </div>
+            <div class="btn-start">
+                <button id="btn-start" class="button-37" role="button"><a  href="create_quizz/create_quiz.html">START</a></button>
+                <!-- <a  href="create_quizz/create_quiz.html">START</a> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="Javascript/login.js"></script>
+</body>
+</html>
