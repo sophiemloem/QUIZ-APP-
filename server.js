@@ -3,7 +3,7 @@ require("dotenv").config();
 const express = require("express");
 var cors = require("cors");
 const app = express();
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 300
 app.use(cors()); // To allow any origin
 app.use(express.json()); // To read json data in request body
 
